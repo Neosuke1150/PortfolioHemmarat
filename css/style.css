@@ -12,6 +12,7 @@ body {
     max-width: 100%;
     background-color: #343434;
     position: sticky;
+    top: 0;
 }
 
 nav {
@@ -73,6 +74,7 @@ li a {
     padding-bottom: 1rem;
 }
 
+
 .spantext {
     color: #FFAC2F;
 }
@@ -114,6 +116,78 @@ li a {
     padding-bottom: 1rem;
 }
 
+.education-section {
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.left-education {
+    margin-right: 2rem;
+}
+
+.internship-section {
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.left-internship {
+    margin-right: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+}
+
+.abilities-section {
+    margin: 0 10rem;
+    padding: 2rem 0;
+}
+
+.tools {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.resume-section {
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+button {
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1138px) {
@@ -122,6 +196,7 @@ li a {
         flex-direction: column;
 
     }
+
     .lato-bold {
         font-size: 4rem;
     }
