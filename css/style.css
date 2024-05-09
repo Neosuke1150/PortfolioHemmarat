@@ -12,6 +12,7 @@ body {
     max-width: 100%;
     background-color: #343434;
     position: sticky;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     top: 0;
 }
 
@@ -153,6 +154,7 @@ p {
 
 .tools {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: flex-start;
 }
@@ -171,34 +173,62 @@ p {
     padding: 2rem 0;
 }
 
-button {
-    padding: 1rem;
+.resume-btn {
+    transition: all .2s ease;
+    padding: 1rem 2rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-    border-radius: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: #343434 0.125rem solid;
+    color: #343434;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.resume-btn:hover {
+    color: #FFAC2F;
+    background: #343434;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* responsive design */
 @media only screen and (max-width: 1138px) {
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 1.25rem;
+    }
 
     .main-banner {
         flex-direction: column;
-
     }
 
     .lato-bold {
         font-size: 4rem;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1043px) {
+
+    .resume-section {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -228,6 +258,43 @@ button {
         align-items: center;
         padding: 2rem 0;
     }
+
+    .personality-section {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .education-section {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .internship-section {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .abilities-section {
+        margin: 0 1rem;
+        padding: 2rem 0;
+    }
+
+    .resume-section {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
 }
 
 @media only screen and (max-width: 743px) {
@@ -235,6 +302,38 @@ button {
     nav {
         margin: 0;
     }
+
+    .personality-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .internship-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .abilities-section {
+        text-align: center;
+    }
+
+    .tools {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .skills {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width: 516px) {

@@ -26,20 +26,22 @@
                 Hemmarat Jitsukphati
             </div>
             <ul>
-                <li class="menu-link"><a href="">About Me</a></li>
-                <li class="menu-link"><a href="">Resume</a></li>
-                <li class="menu-link"><a href="">My Projects</a></li>
-                <li class="menu-link"><a href="">Contact</a></li>
+                <li class="menu-link" id="about-link"><a href="#about">About Me</a></li>
+                <li class="menu-link" id="resume-link"><a href="#resume">Resume</a></li>
+                <li class="menu-link" id="projects-link"><a href="#projects">My Projects</a></li>
+                <li class="menu-link" id="contact-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="container main-banner">
+    <div class="container main-banner" id="about">
         <div class="left-banner">
             <h1 class="lato-bold">Hello There, My Name Is <span class="spantext">Hemmarat</span></h1>
             <p>I'd like to work as an <span class="banner-span">ux/ui designer.</span></p>
+            <br>
             <p>Because it makes my work enjoyable all the time, I truly appreciate working with
                 UX/UI design.</p>
+            <br>
         </div>
         <div class="right-banner">
             <img class="main-profile" src="images/main_profile.png" alt="">
@@ -112,16 +114,20 @@
         </div>
     </div>
 
-    <div class="container resume-section">
+    <div class="container resume-section" id="resume">
         <div class="left-banner">
             <h1 class="lato-bold">Get To Know Me With My <span class="spantext">Resume</span></h1>
-            <button class="resume-btn"><i class="fa-solid fa-download"></i> Download Resume</button>
+            <br>
+            <a href="#" class="resume-btn" id="download-resume"><i class="fa-solid fa-download"></i> Download Resume</a>
         </div>
         <div class="right-banner">
             <img class="main-profile" src="images/resumepic.svg" alt="">
         </div>
     </div>
 
+
+    <script src="js/scrollspy.js"></script>
+    <script src="js/download_resume.js"></script>
 </body>
 
 </html>
